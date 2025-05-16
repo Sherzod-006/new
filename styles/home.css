@@ -1,51 +1,47 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* .container{
-    display: flex;
-    width: 100%;
-    max-width: 1300px;
-    margin: 0 auto;
-    background-color: violet;
-} */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
 
 /* For Desctops */
-@media  (min-width: 1024px) {
-    .container{
-        display: flex;
-        width: 90%;
-        max-width: 1200px;
-        margin: 0 auto;
-        background-color: violet;
-    }
-    
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
 }
 
 /* For Tablets */
 @media (max-width: 1024px) {
-    .container{
-        display: flex;
-        width: 95%;
-        max-width: 900px;
-        margin: 0 auto;
-        background-color: rgb(35, 210, 198);
-    }
-    
+  .container {
+    display: flex;
+    width: 95%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgb(35, 210, 198);
+  }
 }
 
 /* For Mobile phones */
 @media (max-width: 480px) {
-    .container{
-        display: flex;
-        width: 93%;
-        margin: 0 auto;
-        background-color: rgb(192, 145, 16);
-    }
-    
+  .container {
+    display: flex;
+    width: 93%;
+    margin: 0 auto;
+    background-color: rgb(192, 145, 16);
+  }
 }
-.dark{
-    background-color: rgb(31, 30, 30);
-    color: white;
+.dark {
+  background-color: rgb(31, 30, 30);
+  color: white;
 }
