@@ -59,13 +59,9 @@ button {
     border-bottom: solid 4px rgb(54, 75, 205);
   }
 
-  .settingBar {
-    width: 15%;
-  }
   .settingBar ul {
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
   .settingBar ul li button {
     display: flex;
@@ -82,6 +78,27 @@ button {
   }
   .settingBar ul li .setbut:hover {
     color: rgb(54, 75, 205);
+  }
+  .settingBar ul li .logbut {
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: rosybrown;
+  }
+  #toggle-dark-mode {
+    padding: 1px 3px;
+    border-radius: 20px;
+    font-size: 17px;
+    background-color: coral;
+  }
+  #toggle-dark-mode i {
+    border-radius: 50%;
+    padding: 3px;
+  }
+  #toggle-dark-mode i:first-child {
+    padding-right: 10px;
+  }
+  #toggle-dark-mode .iact {
+    background-color: #fff;
   }
 }
 
@@ -111,4 +128,5 @@ button {
 }
 .black {
   background-color: rgb(2, 2, 12);
+  color: white;
 }
