@@ -144,6 +144,41 @@ button {
     margin: 0 auto;
     background-color: rgb(35, 210, 198);
   }
+
+  .headerDesc {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .mainLogo {
+    display: flex;
+    align-items: center;
+  }
+  .mainLogo span {
+    color: coral;
+  }
+  .navbar {
+    width: 30%;
+  }
+  .navbar ul {
+    display: flex;
+    justify-content: space-between;
+  }
+  .navbar ul li a {
+    padding: 15px 35px;
+  }
+  .navbar ul li a:hover {
+    color: rgb(54, 75, 205);
+  }
+  .navbar ul li .active {
+    color: rgb(54, 75, 205);
+    padding: 15px 35px;
+    border-bottom: solid 4px rgb(54, 75, 205);
+  }
+
+  .settingBar {
+    display: none;
+  }
 }
 
 /* For Mobile phones */
