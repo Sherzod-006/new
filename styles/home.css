@@ -63,6 +63,16 @@ button {
     display: flex;
     align-items: center;
   }
+  .settingBar ul li:first-child {
+    margin-right: 10px;
+  }
+  .settingBar ul li:last-child {
+    margin-left: 10px;
+  }
+  .settingBar ul li:nth-child(2) {
+    margin-right: 10px;
+  }
+
   .settingBar ul li button {
     display: flex;
     font-size: 17px;
@@ -79,11 +89,33 @@ button {
   .settingBar ul li .setbut:hover {
     color: rgb(54, 75, 205);
   }
+
   .settingBar ul li .logbut {
-    padding: 10px 15px;
-    border-radius: 10px;
-    background-color: rosybrown;
+    padding: 11px;
+    border-radius: 50%;
   }
+  .settingBar ul li .logbutact {
+    padding: 7px;
+    border: royalblue solid 4px;
+    border-radius: 50%;
+  }
+  .settingBar ul li .logbut:hover {
+    color: rgb(54, 75, 205);
+  }
+
+  .settingBar ul li .sigbut {
+    padding: 11px;
+    border-radius: 50%;
+  }
+  .settingBar ul li .sigbutact {
+    padding: 7px;
+    border: royalblue solid 4px;
+    border-radius: 50%;
+  }
+  .settingBar ul li .sigbut:hover {
+    color: rgb(54, 75, 205);
+  }
+
   #toggle-dark-mode {
     padding: 1px 3px;
     border-radius: 20px;
@@ -99,6 +131,7 @@ button {
   }
   #toggle-dark-mode .iact {
     background-color: #fff;
+    transition: all 0.3s ease-in-out;
   }
 }
 
