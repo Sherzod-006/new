@@ -21,6 +21,21 @@ button {
   background-color: #f0f0f0;
 }
 
+.mainLogo span {
+  color: coral;
+}
+.mainLogo {
+  display: flex;
+  align-items: center;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
 /* For Desctops */
 @media (min-width: 1024px) {
   .container {
@@ -28,18 +43,15 @@ button {
     max-width: 1200px;
     margin: 0 auto;
   }
+  .headerMob {
+    display: none;
+  }
   .headerDesc {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  .mainLogo {
-    display: flex;
-    align-items: center;
-  }
-  .mainLogo span {
-    color: coral;
-  }
+
   .navbar {
     width: 30%;
   }
@@ -143,6 +155,9 @@ button {
     max-width: 900px;
     margin: 0 auto;
   }
+  .headerMob {
+    display: none;
+  }
 
   .headerDesc {
     width: 100%;
@@ -150,13 +165,7 @@ button {
     justify-content: space-between;
     align-items: center;
   }
-  .mainLogo {
-    display: flex;
-    align-items: center;
-  }
-  .mainLogo span {
-    color: coral;
-  }
+
   .navbar ul {
     display: flex;
     justify-content: space-between;
@@ -187,23 +196,35 @@ button {
   }
 
   .headerDesc {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  .mainLogo {
-    display: flex;
-    align-items: center;
-  }
-  .mainLogo span {
-    color: coral;
-  }
-  .navbar {
     display: none;
   }
-
-  .settingBar {
-    display: none;
+  .sidebar {
+    display: block;
+    background: #222;
+    position: fixed;
+    width: 45%;
+    height: 100%;
+    top: 0;
+    right: -200px;
+    transition: all 0.3s ease-in-out;
+  }
+  .actnav {
+    display: block;
+    background: #222;
+    position: fixed;
+    width: 45%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    transition: all 0.3s ease;
+  }
+  .actnav .close-sidebar {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 20px;
+    background-color: #080808;
+    color: white;
   }
 }
 .dark {
@@ -213,4 +234,7 @@ button {
 .black {
   background-color: rgb(2, 2, 12);
   color: white;
+}
+.none {
+  display: none;
 }

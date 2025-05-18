@@ -57,3 +57,13 @@ document.getElementById("sigbutt").addEventListener("click", function () {
     }
   });
 });
+
+// This is a toggle button of side bar in mobile view
+document
+  .querySelector(".toggle-sidebar")
+  .addEventListener("click", function () {
+    document.querySelector(".sidebar").classList.replace("sidebar", "actnav");
+  });
+document.querySelector(".close-sidebar").addEventListener("click", function () {
+  document.querySelector(".actnav").classList.replace("actnav", "sidebar");
+});
